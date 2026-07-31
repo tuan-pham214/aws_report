@@ -1,0 +1,14 @@
+public/*
+.DS_Store
+.hugo_build.lock
+report/generated/
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.pdf
+report/*.fls
+report/*.fdb_latexmk
+report_vn.pdf
+report_en.pdf
+report/form/*.pdf
