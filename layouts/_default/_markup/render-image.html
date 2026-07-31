@@ -1,0 +1,6 @@
+{{- $src := .Destination -}}
+{{- $separator := "?" -}}
+{{- if strings.Contains $src "?" -}}
+  {{- $separator = "&" -}}
+{{- end -}}
+<img src="{{ $src | safeURL }}{{ $separator }}v={{ now.Unix }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }}>
